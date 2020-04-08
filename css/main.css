@@ -1,0 +1,185 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+.hero {
+	background-image: url("../img/capa-madmax2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	
+	position: relative;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+.hero-menu {
+	display: flex;
+	z-index: 2;
+}
+
+.hero-menu .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.hero-logo {
+	display: inline-block;
+}
+
+.hero-lista {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-lista-item {
+	margin: 0 25px;
+}
+
+.hero-lista-item a {
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.hero-lista-item a:hover {
+	color: #e4bb23;
+}
+
+.hero-usuario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.hero-usuario-foto {
+	border-radius: 100%;
+	height: 45px;
+	width: 45px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	margin-right: 15px;
+}
+
+.hero-usuario-nome {
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.hero-usuario-foto img{
+	width: 100%;
+	height: auto;
+}
+
+.hero-conteudo {
+	width: 100%;
+}
+
+.hero-conteudo .container {
+	z-index: 2;
+	position: relative;
+}
+
+.hero-titulo {
+	color: white;
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.hero-genero {
+	display: flex;
+	font-size: 13px;
+	margin: 15px 0 30px;
+
+}
+
+.hero-genero-item {
+	display: flex;
+	margin-right: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	color: white;
+}
+
+.hero-genero-item:hover {
+    color: #e4bb23;
+}
+
+.hero-botao {
+	display: inline-block;
+    padding: 15px 50px;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-botao:hover {
+	background-color: #bc9a1d;
+}
+
+.hero-botao i {
+	font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.hero-informacao {
+	padding: 20px 0;
+    font-size: 1.4em;
+	color: #fff;
+}
+
+.hero-informacao p:last-child {
+	color: #bc9a1d;
+}
