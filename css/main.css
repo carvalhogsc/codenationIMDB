@@ -74,7 +74,8 @@ body {
 	margin: 0 25px;
 }
 
-.hero-lista-item a {
+.hero-lista-item a,
+.catalogo-menu-lista-item a {
 	color: white;
 	font-size: 1.3em;
 	font-weight: bold;
@@ -182,4 +183,158 @@ body {
 
 .hero-informacao p:last-child {
 	color: #bc9a1d;
+}
+
+.catalogo {
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.catalogo-menu {
+	width: 100%;
+}
+
+.catalogo-menu-lista {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.catalogo-menu-lista-item {
+	margin: 0 20px;
+}
+
+.catalogo-menu-lista-item a {
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.catalogo-menu-lista-item a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.catalogo-filmes-lista {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 20px 0;
+
+}
+
+.catalogo-filmes-lista-item {
+	width: 24%;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.filme-poster {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+.filme-poster img {
+	width: 100%;
+	height: auto;
+}
+
+.filme-poster-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	opacity: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	visibility: hidden;
+	transition: all 0.2s ease-in-out;
+	padding: 80px 20px;
+}
+
+.catalogo-filmes-lista-item:hover .filme-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.filme-poster-info h3 {
+    color: #e4bb23;
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.filme-poster-link {
+    color: #fff;
+    font-size: 5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.filme-poster-link:hover {
+    color: #e4bb23;
+    
+}
+
+.filme-sinopse {
+	width: 100%;
+	padding: 10px;
+}
+
+.filme-sinopse-titulo {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sinopse-genero {
+    margin: 10px 0;
+    display: flex;
+}
+
+.sinopse-genero-item {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e4bb23;
+}
+
+.sinopse-genero-item:hover {
+    text-decoration: underline;
+}
+
+.filme-nota {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.filme-nota i {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.filme-nota i:hover {
+    color: #e74c3c;
 }
